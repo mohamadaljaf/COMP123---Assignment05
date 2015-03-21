@@ -1,4 +1,19 @@
-﻿using System;
+﻿///------------------------------------------------------------------------------------------
+///   Project:              Assignment 05 - Airline Reservations System
+/// 
+///   Author:               Mohamad Al-Jaf   
+///   
+///   Date last modified:   March 20, 2015
+///   
+///   Program description:  A program that stores student grades in a text file and displays
+///                         them to the console.
+///                         
+///   Revision History:     2015-03-20: Initial build
+///                         2015-03-20: Added the main menu
+///                         2015-03-20: Added a readfile method
+///                         2015-03-20: Added documentation
+///------------------------------------------------------------------------------------------
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -61,6 +76,12 @@ namespace Assignment05
             string[] results = new string[10];
             string appDir = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName;
 
+            // adds the extension .txt if the user did not enter it
+            if (fileName.Contains(".txt") == false)
+            {
+                fileName += ".txt";
+            }
+
             try
             {
                 FileStream inFile = new FileStream(appDir + "\\Data\\" + fileName, FileMode.Open, FileAccess.Read);
@@ -77,6 +98,8 @@ namespace Assignment05
 
                 reader.Close(); //closes the file
                 inFile.Close(); //closes the file-stream
+
+                Console.WriteLine("----------------------------");
 
                 foreach (string line in results)
                 {
