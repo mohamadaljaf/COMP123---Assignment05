@@ -1,0 +1,10 @@
+Dexter Morgan,123,Computer Science,A+
+Hank Hill,150,Intro to Propane,A+
+Bobby Hill,100,Intro to games,A+
+Jordan Schlansky,201,Intro to producing,A
+Saul Goodman,350,Law and Crime,A-
+Walter White,235,Chemistry 101,A+
+Jesse Pinkman,235,Chemistry 101,C-
+Tyrion Lannister,400,Advanced Psychology,A
+Jaime Lannister,130,Swordsmanship,A+
+Arya Stark,129,Intro to swordsmanship,B+
